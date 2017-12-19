@@ -12,15 +12,25 @@ namespace codefightsScribble
 
         static void FirstDuplicate(int[] a)
         {
-            // var answerList = new List<int>();
-            var indexTest = Array.IndexOf(a, 66);
+            var answerList = new List<int>();
+
+            
 
             for (var i = 0; i < a.Length; i++)
             {
-                Console.WriteLine("a[i] " + a[i]);
-                Console.WriteLine();
-                Console.WriteLine("indexTest 5: " + indexTest);
-                Console.WriteLine();
+                var indexTest = answerList.IndexOf(a[i]);
+
+                // if not there
+                if (indexTest < 0)
+                {
+                    answerList.Add(a[i]);
+                }
+                else
+                {
+                    Console.WriteLine(a[i]);
+                    break;
+                }
+                
             }
 
             
@@ -28,7 +38,7 @@ namespace codefightsScribble
 
         static void Main(string[] args)
         {
-            int[] testNums = {1, 2, 2, 3, 3, 66, 55, 44, 33, 22};
+            int[] testNums = {1, 2, 3, 3, 66, 55, 44, 33, 22};
             
             FirstDuplicate(testNums);
         }
