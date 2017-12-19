@@ -35,7 +35,28 @@ namespace codefightsScribble
                 
             }
 
-            
+            ////////////////////////////// passes 11/11 tests but not hidden tests due to time constraints
+            /*
+            for (var i = 0; i < a.Length; i++)
+            {
+
+                if (Array.IndexOf(a, a[i]) < i)
+                {
+                    return a[i];
+                }
+                else
+                {
+                    Console.Write("run " + (i + 1) + "\n");
+                }
+
+            }
+            return -1
+            */
+
+            //Dictionary<?>
+            ////////////////////////////// 
+
+
         }
 
         static void Main(string[] args)
