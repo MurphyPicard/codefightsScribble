@@ -13,17 +13,23 @@ namespace codefightsScribble
         static void FirstDuplicate(int[] a)
         {
             // var answerList = new List<int>();
-            foreach (var num in a)
+            var indexTest = Array.IndexOf(a, 66);
+
+            for (var i = 0; i < a.Length; i++)
             {
-                Console.WriteLine("testing loop: " + num);
+                Console.WriteLine("a[i] " + a[i]);
+                Console.WriteLine();
+                Console.WriteLine("indexTest 5: " + indexTest);
+                Console.WriteLine();
             }
 
-            // return -1;
+            
         }
 
         static void Main(string[] args)
         {
-            int[] testNums = {1, 2, 3};
+            int[] testNums = {1, 2, 2, 3, 3, 66, 55, 44, 33, 22};
+            
             FirstDuplicate(testNums);
         }
 
