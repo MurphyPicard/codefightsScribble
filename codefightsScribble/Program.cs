@@ -25,6 +25,8 @@ namespace codefightsScribble
                 {
                     answerList.Add(a[i]);
                 }
+
+                // if there already it is the first duplicate
                 else
                 {
                     Console.WriteLine(a[i]);
