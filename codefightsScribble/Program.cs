@@ -10,6 +10,7 @@ namespace codefightsScribble
     {
         static void Main(string[] args)
         {
+            // Initial commit
         }
     }
 }
